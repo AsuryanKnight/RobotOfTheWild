@@ -1,15 +1,17 @@
-export class GameObject {
-    constructor(name) {
-        this.x = 0;
-        this.y = 0;
+export class StaticGameObject {
+    constructor(tag) {
         const gameElement = document.querySelector('game');
-        this.element = document.createElement(name);
-        gameElement.appendChild(this.element);
+        this.div = document.createElement(tag);
+        document.body.appendChild(this.div);
     }
-    remove() {
-        this.element.remove();
+    getBoundingRect() {
+        return this.div.getBoundingClientRect();
     }
     update() {
+        this.div.style.transform = `translate(${this.x}px, ${this.y}px)`;
+    }
+    remove() {
+        this.div.remove();
     }
 }
 //# sourceMappingURL=gameobject.js.map
