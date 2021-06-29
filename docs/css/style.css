@@ -1,0 +1,158 @@
+body {
+    background-image: url('../img/backgroundMedium.jpg');
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 99vh;
+    z-index: 1;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+    overflow: hidden;
+}
+
+gearbox, datadisk, ammobox, player,bullet, wolf, deer{
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+player{
+    background-image: url('../img/test1.png');
+    width: 100px;
+    height: 125px;
+    z-index: 999
+}
+bullet{
+    background-image: url('../img/bullet.png');
+    width: 20px;
+    height: 20px;
+    z-index: 999
+}
+ammobox{
+    background-image: url('../img/Commando_Rush_Ammo_Box.png');
+    width: 50px;
+    height: 50px;
+    z-index: 500
+
+}
+gearbox{
+    background-image: url('../img/gear.png');
+    width: 50px;
+    height: 50px;
+    z-index: 500
+
+}
+datadisk{
+    background-image: url('../img/disk.png');
+    width: 50px;
+    height: 50px;
+    z-index: 500
+
+}
+health, score, time, kills, diskElement{
+    margin-top: 5px;
+    z-index: 1000;
+    display: flex;
+    padding-left: 20px;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-weight: bolder;
+}
+
+wolf{
+    background-image: url('../img/wolfsheet1.png');
+    width: 100px;
+    height: 100px;
+    z-index: 750
+}
+deer{
+    width: 100px;
+    height: 100px;
+    z-index: 750
+}
+health{
+    padding-top: 20px;
+}
+
+paused{
+    margin-left: calc(39vw);
+    margin-right: calc(20vw);
+}
+destoyed{
+    margin-left: calc(35vw);
+    margin-right: calc(20vw);
+}
+collected{
+    margin-left: calc(20vw);
+    margin-right: calc(20vw);
+}
+
+.message{
+    z-index: 999;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    padding: 25px;
+    font-weight: bolder;
+    position: relative;
+    display: flex;
+}
+titel{
+    margin-top: 50px;
+    margin-left: calc(39vw - 50px);
+    margin-right: calc(39vw + 50px);
+    background-color: grey;
+}
+
+pickup, fireWeapon, movement, pauseMenu{
+    z-index: 999;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+    font-size: 1.0em;
+    text-align: center;
+    color: white;
+    padding: 25px;
+    font-weight: bolder;
+    position: relative;
+    display: flex;
+    margin-left: calc(39vw - 50px);
+    margin-right: calc(39vw + 50px);
+    background-color: grey;
+    font-size: 1.0em;
+}
+
+
+.btn{
+    z-index: 999;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+    font-size: 1.2em;
+    font-weight: bolder;    
+    
+    background-color: green;
+    color: white;
+    margin: 20px;
+    margin-left: calc(40vw);
+    margin-right: calc(45vw);
+    padding: 25px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+.male{
+    background-image: url('../img/deermale.png');
+}
+.female{
+    background-image: url('../img/deerfemale.png');
+}
+.dead{
+    background-image: url('../img/d2d9543e6df153f.png');
+    z-index: 250
+}
