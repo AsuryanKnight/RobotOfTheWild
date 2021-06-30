@@ -1,4 +1,4 @@
-import { StaticGameObject } from "./gameobject.js";
+import { StaticGameObject } from "./gameObject.js";
 export class StartButton extends StaticGameObject {
     constructor(g) {
         super("startscreen");

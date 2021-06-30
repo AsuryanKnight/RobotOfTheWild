@@ -32,9 +32,6 @@ export class Player extends TurnableGameObject {
         }
         super.update();
     }
-    getBoundingRect() {
-        return this.div.getBoundingClientRect();
-    }
     onKeyDown(e) {
         switch (e.key) {
             case "a":

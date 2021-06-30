@@ -1,5 +1,5 @@
 import { Game } from "./game.js"
-import { StaticGameObject } from "./gameobject.js"
+import { StaticGameObject } from "./gameObject.js"
 
 export class DataDisk extends StaticGameObject{
     public game : Game

@@ -1,4 +1,4 @@
-import { StaticGameObject } from "./gameobject.js"
+import { StaticGameObject } from "./gameObject.js"
 
 export class AmmoBox extends StaticGameObject{
 
